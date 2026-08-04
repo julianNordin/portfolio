@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#101828"/>
+      <stop offset="100%" stop-color="#4a90d9"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg5)"/>
+  <g fill="#ffffff30">
+    <rect x="560" y="260" width="30" height="80"/>
+    <rect x="600" y="220" width="30" height="120"/>
+    <rect x="640" y="180" width="30" height="160"/>
+    <rect x="680" y="140" width="30" height="200"/>
+    <rect x="720" y="100" width="30" height="240"/>
+  </g>
+  <text x="60" y="220" fill="#ffffff" font-family="Arial, sans-serif" font-size="38" font-weight="700">Data Structures</text>
+  <text x="60" y="270" fill="#ffffff" font-family="Arial, sans-serif" font-size="38" font-weight="700">&amp; Algorithms</text>
+  <text x="60" y="320" fill="#dbeeff" font-family="Arial, sans-serif" font-size="20">Sorting &amp; searching benchmarks in C++</text>
+  <rect x="58" y="360" width="70" height="34" rx="17" fill="#ffffff20"/>
+  <text x="72" y="383" fill="#ffffff" font-family="Arial, sans-serif" font-size="16">C++</text>
+</svg>

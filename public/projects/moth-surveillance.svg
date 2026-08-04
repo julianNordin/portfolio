@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12241d"/>
+      <stop offset="100%" stop-color="#3fae6c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg3)"/>
+  <g stroke="#ffffff30" stroke-width="1.5" fill="none">
+    <circle cx="650" cy="200" r="60"/>
+    <circle cx="650" cy="200" r="90"/>
+    <circle cx="650" cy="200" r="8" fill="#a9ff5b"/>
+  </g>
+  <text x="60" y="220" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="700">MOTH</text>
+  <text x="60" y="270" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="700">Surveillance System</text>
+  <text x="60" y="320" fill="#dcffe9" font-family="Arial, sans-serif" font-size="20">PIR Sensors · Node.js · PHP</text>
+  <rect x="58" y="360" width="90" height="34" rx="17" fill="#ffffff20"/>
+  <text x="72" y="383" fill="#ffffff" font-family="Arial, sans-serif" font-size="16">PHP</text>
+</svg>
