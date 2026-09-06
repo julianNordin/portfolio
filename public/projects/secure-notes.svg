@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg-secure-notes" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#171733"/>
+      <stop offset="100%" stop-color="#6d5bd0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg-secure-notes)"/>
+  <g fill="#ffffff20"><rect x="560" y="100" width="180" height="50" rx="12"/><rect x="590" y="170" width="140" height="50" rx="12"/><rect x="560" y="240" width="180" height="50" rx="12"/></g>
+  <text x="60" y="220" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="700">Secure Notes</text>
+  <text x="60" y="270" fill="#e9e9f5" font-family="Arial, sans-serif" font-size="24" font-weight="500">Where authentication is the feature</text>
+  <text x="60" y="320" fill="#e9e9f5" font-family="Arial, sans-serif" font-size="20">.NET 9 · Identity · JWT · PostgreSQL</text>
+  <rect x="58" y="360" width="87" height="34" rx="17" fill="#ffffff20"/>
+  <text x="101.5" y="383" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif" font-size="16">Backend</text>
+</svg>

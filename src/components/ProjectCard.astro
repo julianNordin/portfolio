@@ -1,0 +1,105 @@
+---
+import type { Project } from "@/data/projects";
+
+interface Props {
+  project: Project;
+  /** Cards below the fold can load lazily; the first row should not. */
+  eager?: boolean;
+}
+
+const { project, eager = false } = Astro.props;
+const { title, description, image, repo, demo, stack } = project;
+---
+
+<article class="group">
+  <a
+    href={repo}
+    target="_blank"
+    rel="noopener noreferrer"
+    tabindex="-1"
+    aria-hidden="true"
+    class="block rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 mb-4"
+  >
+    <img
+      src={image}
+      alt=""
+      class="w-full aspect-[16/9] object-cover group-hover:scale-105 transition-transform duration-300"
+      width="800"
+      height="450"
+      loading={eager ? "eager" : "lazy"}
+      decoding="async"
+    />
+  </a>
+
+  <div class="flex items-start gap-3 px-3">
+    <div class="flex-grow min-w-0">
+      <h4 class="text-xl md:text-2xl font-semibold leading-tight">
+        <a
+          href={repo}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-[var(--sec)] transition-colors duration-300"
+        >
+          {title}
+        </a>
+      </h4>
+
+      <p class="text-sm text-[var(--white-icon)] mt-2 text-pretty">
+        {description}
+      </p>
+
+      <ul class="flex flex-wrap gap-2 mt-3" aria-label="Built with">
+        {
+          stack.map((item) => (
+            <li class="text-xs text-[var(--white-icon)] border border-[var(--white-icon-tr)] bg-[#1414149c] rounded-full px-3 py-1">
+              {item}
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+
+    <div class="flex gap-2 shrink-0">
+      {
+        demo && (
+          <a
+            href={demo}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${title} — open the live app`}
+            title="Live app"
+            class="size-12 flex justify-center items-center text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-1 border-[var(--white-icon-tr)] p-3 rounded-xl bg-[#1414149c] hover:bg-[var(--white-icon-tr)]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z" />
+            </svg>
+          </a>
+        )
+      }
+      <a
+        href={repo}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`${title} — view the source on GitHub`}
+        title="Source code"
+        class="size-12 flex justify-center items-center text-[var(--white-icon)] group-hover:text-white transition duration-300 ease-in-out border border-1 border-[var(--white-icon-tr)] p-3 rounded-xl bg-[#1414149c] group-hover:bg-[var(--white-icon-tr)]"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="size-6"
+        >
+          <path
+            d="M24 12L18.3431 17.6569L16.9289 16.2426L21.1716 12L16.9289 7.75736L18.3431 6.34315L24 12ZM2.82843 12L7.07107 16.2426L5.65685 17.6569L0 12L5.65685 6.34315L7.07107 7.75736L2.82843 12ZM9.78845 21H7.66009L14.2116 3H16.3399L9.78845 21Z"
+          ></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</article>

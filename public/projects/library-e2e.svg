@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg-library-e2e" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a1f10"/>
+      <stop offset="100%" stop-color="#c8922f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg-library-e2e)"/>
+  <g fill="#ffffff20"><rect x="550" y="110" width="190" height="14" rx="7"/><rect x="550" y="150" width="150" height="14" rx="7"/><rect x="550" y="190" width="170" height="14" rx="7"/><rect x="550" y="230" width="120" height="14" rx="7"/><path d="M556 292l22 22 46-46 14 14-60 60-36-36z"/></g>
+  <text x="60" y="220" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="700">LibrarySystem E2E</text>
+  <text x="60" y="270" fill="#e9e9f5" font-family="Arial, sans-serif" font-size="24" font-weight="500">A real browser against a live stack</text>
+  <text x="60" y="320" fill="#e9e9f5" font-family="Arial, sans-serif" font-size="20">Playwright · TypeScript · Docker</text>
+  <rect x="58" y="360" width="87" height="34" rx="17" fill="#ffffff20"/>
+  <text x="101.5" y="383" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif" font-size="16">Testing</text>
+</svg>
