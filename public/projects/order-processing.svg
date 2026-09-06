@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg-order-processing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#171733"/>
+      <stop offset="100%" stop-color="#6d5bd0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg-order-processing)"/>
+
+  <rect x="576" y="190" width="52" height="46" rx="8" fill="#ffffff28"/>
+  <g stroke="#ffffff40" stroke-width="4" stroke-linecap="round">
+    <line x1="634" y1="213" x2="658" y2="213"/>
+    <line x1="720" y1="213" x2="742" y2="213"/>
+  </g>
+  <g fill="#ffffff28">
+    <rect x="664" y="172" width="50" height="20" rx="5"/>
+    <rect x="664" y="228" width="50" height="20" rx="5"/>
+  </g>
+  <rect x="664" y="200" width="50" height="20" rx="5" fill="#a476ff" opacity="0.85"/>
+  <circle cx="758" cy="213" r="22" fill="none" stroke="#ffffff40" stroke-width="5"/>
+  <circle cx="758" cy="213" r="7" fill="#ffffff40"/>
+  <text x="60" y="220" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="700">Order Processing</text>
+  <text x="60" y="270" fill="#e9e9f5" font-family="Arial, sans-serif" font-size="24" font-weight="500">An outbox, a queue, a worker</text>
+  <text x="60" y="320" fill="#e9e9f5" font-family="Arial, sans-serif" font-size="20">.NET · RabbitMQ · Docker</text>
+  <rect x="58" y="360" width="87" height="34" rx="17" fill="#ffffff20"/>
+  <text x="101.5" y="383" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif" font-size="16">Backend</text>
+</svg>

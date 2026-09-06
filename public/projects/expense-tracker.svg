@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg-expense-tracker" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10262b"/>
+      <stop offset="100%" stop-color="#3fa8a0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg-expense-tracker)"/>
+
+  <g fill="#ffffff28">
+    <rect x="580" y="240" width="26" height="62" rx="3"/>
+    <rect x="616" y="206" width="26" height="96" rx="3"/>
+    <rect x="688" y="226" width="26" height="76" rx="3"/>
+    <rect x="724" y="192" width="26" height="110" rx="3"/>
+  </g>
+  <rect x="652" y="168" width="26" height="134" rx="3" fill="#a476ff" opacity="0.85"/>
+  <line x1="568" y1="186" x2="758" y2="186" stroke="#a9ff5b" stroke-width="3"
+        stroke-dasharray="10 8" stroke-linecap="round"/>
+  <rect x="568" y="302" width="190" height="6" rx="3" fill="#ffffff30"/>
+  <text x="60" y="220" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="700">Expense Tracker</text>
+  <text x="60" y="270" fill="#e9e9f5" font-family="Arial, sans-serif" font-size="24" font-weight="500">Spending against a budget</text>
+  <text x="60" y="320" fill="#e9e9f5" font-family="Arial, sans-serif" font-size="20">Angular · Zoneless · sv-SE</text>
+  <rect x="58" y="360" width="96" height="34" rx="17" fill="#ffffff20"/>
+  <text x="106.0" y="383" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif" font-size="16">Frontend</text>
+</svg>

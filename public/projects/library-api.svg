@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg-library-api" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#171733"/>
+      <stop offset="100%" stop-color="#6d5bd0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg-library-api)"/>
+
+  <g fill="#ffffff22">
+    <rect x="580" y="190" width="26" height="110" rx="4"/>
+    <rect x="612" y="174" width="26" height="126" rx="4"/>
+    <rect x="644" y="200" width="26" height="100" rx="4"/>
+    <rect x="712" y="184" width="26" height="116" rx="4"/>
+  </g>
+  <rect x="676" y="196" width="26" height="104" rx="4" fill="#a476ff" opacity="0.8"
+        transform="rotate(14 689 248)"/>
+  <rect x="568" y="302" width="184" height="8" rx="4" fill="#ffffff30"/>
+  <text x="60" y="220" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="700">LibrarySystem API</text>
+  <text x="60" y="270" fill="#e9e9f5" font-family="Arial, sans-serif" font-size="24" font-weight="500">Lending rules the server enforces</text>
+  <text x="60" y="320" fill="#e9e9f5" font-family="Arial, sans-serif" font-size="20">ASP.NET Core 9 · EF Core · SQL Server</text>
+  <rect x="58" y="360" width="87" height="34" rx="17" fill="#ffffff20"/>
+  <text x="101.5" y="383" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif" font-size="16">Backend</text>
+</svg>

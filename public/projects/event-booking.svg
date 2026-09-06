@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg-event-booking" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#171733"/>
+      <stop offset="100%" stop-color="#6d5bd0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg-event-booking)"/>
+
+  <g fill="#ffffff22">
+    <rect x="580" y="228" width="28" height="32" rx="6"/>
+    <rect x="616" y="228" width="28" height="32" rx="6"/>
+    <rect x="652" y="228" width="28" height="32" rx="6"/>
+    <rect x="724" y="228" width="28" height="32" rx="6"/>
+  </g>
+  <rect x="688" y="228" width="28" height="32" rx="6" fill="none" stroke="#a9ff5b" stroke-width="3"/>
+  <g stroke="#ffffff45" stroke-width="4" stroke-linecap="round" fill="none">
+    <line x1="634" y1="152" x2="692" y2="212"/>
+    <line x1="754" y1="152" x2="712" y2="212"/>
+  </g>
+  <circle cx="628" cy="144" r="11" fill="#ffffff38"/>
+  <circle cx="760" cy="144" r="11" fill="#ffffff38"/>
+  <text x="60" y="220" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="700">Event Booking API</text>
+  <text x="60" y="270" fill="#e9e9f5" font-family="Arial, sans-serif" font-size="24" font-weight="500">Two people, one last seat</text>
+  <text x="60" y="320" fill="#e9e9f5" font-family="Arial, sans-serif" font-size="20">NestJS · Prisma · PostgreSQL</text>
+  <rect x="58" y="360" width="87" height="34" rx="17" fill="#ffffff20"/>
+  <text x="101.5" y="383" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif" font-size="16">Backend</text>
+</svg>

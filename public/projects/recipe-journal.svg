@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg-recipe-journal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10262b"/>
+      <stop offset="100%" stop-color="#3fa8a0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg-recipe-journal)"/>
+
+  <g fill="#ffffff26">
+    <ellipse cx="606" cy="168" rx="31" ry="11"/>
+    <rect x="575" y="168" width="62" height="52"/>
+    <ellipse cx="606" cy="220" rx="31" ry="11"/>
+  </g>
+  <line x1="646" y1="196" x2="700" y2="196" stroke="#a476ff" stroke-width="5"
+        stroke-linecap="round"/>
+  <path d="M712 196 l-16 -9 v18 z" fill="#a476ff"/>
+  <rect x="714" y="146" width="46" height="100" rx="6" fill="#ffffff22"/>
+  <g fill="#ffffff45">
+    <rect x="724" y="162" width="26" height="7" rx="3"/>
+    <rect x="724" y="178" width="20" height="7" rx="3"/>
+    <rect x="724" y="194" width="26" height="7" rx="3"/>
+  </g>
+  <text x="60" y="220" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="700">Recipe Journal</text>
+  <text x="60" y="270" fill="#e9e9f5" font-family="Arial, sans-serif" font-size="24" font-weight="500">The server renders and owns the data</text>
+  <text x="60" y="320" fill="#e9e9f5" font-family="Arial, sans-serif" font-size="20">Next.js 16 · Prisma · NextAuth</text>
+  <rect x="58" y="360" width="96" height="34" rx="17" fill="#ffffff20"/>
+  <text x="106.0" y="383" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif" font-size="16">Frontend</text>
+</svg>

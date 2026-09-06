@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg-shortlink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#101a33"/>
+      <stop offset="100%" stop-color="#3f7fd0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg-shortlink)"/>
+
+  <rect x="574" y="164" width="182" height="16" rx="8" fill="#ffffff26"/>
+  <g fill="#ffffff40">
+    <rect x="620" y="168" width="3" height="8" rx="1"/>
+    <rect x="672" y="168" width="3" height="8" rx="1"/>
+    <rect x="716" y="168" width="3" height="8" rx="1"/>
+  </g>
+  <line x1="665" y1="200" x2="665" y2="226" stroke="#ffffff40" stroke-width="4"
+        stroke-linecap="round"/>
+  <path d="M665 238 l-9 -16 h18 z" fill="#ffffff40"/>
+  <rect x="632" y="248" width="66" height="16" rx="8" fill="#a476ff" opacity="0.85"/>
+  <text x="60" y="220" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="700">ShortLink</text>
+  <text x="60" y="270" fill="#e9e9f5" font-family="Arial, sans-serif" font-size="24" font-weight="500">A tiny app, a real pipeline</text>
+  <text x="60" y="320" fill="#e9e9f5" font-family="Arial, sans-serif" font-size="20">Docker · Compose · GHCR</text>
+  <rect x="58" y="360" width="69" height="34" rx="17" fill="#ffffff20"/>
+  <text x="92.5" y="383" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif" font-size="16">Cloud</text>
+</svg>

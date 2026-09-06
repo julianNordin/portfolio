@@ -1,49 +1,8 @@
 ---
-interface Project {
-  title: string;
-  image: string;
-  link: string;
-  tag: string;
-}
+import ProjectCard from "@/components/ProjectCard.astro";
+import { featuredCategories, projectsIn } from "@/data/projects";
 
-const projects: Project[] = [
-  {
-    title: "Federated Learning Image Classification",
-    image: "/projects/federated-learning.svg",
-    link: "https://github.com/julianNordin/federated-learning-image-classification",
-    tag: "Bachelor's Thesis",
-  },
-  {
-    title: "Restaurant Order Management System",
-    image: "/projects/restaurant-system.svg",
-    link: "https://github.com/julianNordin/restaurant-order-management-system",
-    tag: "Jakarta EE · Android",
-  },
-  {
-    title: "MOTH Surveillance System",
-    image: "/projects/moth-surveillance.svg",
-    link: "https://github.com/julianNordin/moth-surveillance-system",
-    tag: "Node.js · PHP",
-  },
-  {
-    title: "Maze++ (C++ / SFML)",
-    image: "/projects/cpp-maze-game.svg",
-    link: "https://github.com/julianNordin/cpp-maze-game",
-    tag: "2D Game",
-  },
-  {
-    title: "C++ Data Structures & Algorithms",
-    image: "/projects/cpp-dsa.svg",
-    link: "https://github.com/julianNordin/cpp-data-structures-algorithms",
-    tag: "Sorting & Searching",
-  },
-  {
-    title: "PHP Q&A Forum",
-    image: "/projects/php-forum.svg",
-    link: "https://github.com/julianNordin/php-guestbook-app",
-    tag: "PHP · PDO",
-  },
-];
+const earlier = projectsIn("Earlier");
 ---
 
 <section
@@ -52,59 +11,73 @@ const projects: Project[] = [
 >
   <div class="max-w-5xl mx-auto">
     <h2 class="text-lg text-[var(--sec)] mb-2 shiny-sec">My work</h2>
-    <h3 class="text-4xl md:text-5xl font-medium mb-8">Projects</h3>
+    <h3 class="text-4xl md:text-5xl font-medium mb-4">Projects</h3>
+    <p class="text-[var(--white-icon)] mb-12 max-w-2xl text-pretty">
+      Each of these was built around a specific problem — a race for the last
+      seat, a stolen refresh token, a deployment with no stored credential —
+      rather than around a feature list.
+    </p>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      {
-        projects.map((project) => (
-          <div class="group">
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="block"
-            >
-              <div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 mb-4">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  class="w-full h-48 md:h-72 object-cover group-hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
+    {
+      featuredCategories.map((category, categoryIndex) => {
+        const items = projectsIn(category);
+        return (
+          <div class="mb-16">
+            <h4 class="text-sm uppercase tracking-[0.2em] text-[var(--sec)] mb-6 flex items-center gap-3">
+              {category}
+              <span
+                class="h-px flex-grow bg-[var(--white-icon-tr)]"
+                aria-hidden="true"
+              />
+              <span class="text-[var(--white-icon)] tracking-normal normal-case">
+                {items.length}
+              </span>
+            </h4>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
+              {items.map((project, index) => (
+                <ProjectCard
+                  project={project}
+                  eager={categoryIndex === 0 && index < 2}
                 />
-              </div>
-              <div class="flex items-center px-3">
-                <div class="flex-grow">
-                  <h4 class="text-2xl font-semibold">{project.title}</h4>
-                  <span class="py-1 text-sm text-[var(--white-icon)]">
-                    {project.tag}
-                  </span>
-                </div>
-                <div class="flex gap-2 ml-auto">
-                  <span
-                    aria-label="GitHub"
-                    class="size-14 flex justify-center items-center text-[var(--white-icon)] group-hover:text-white transition duration-300 ease-in-out border border-1 border-[var(--white-icon-tr)] p-3 rounded-xl bg-[#1414149c] group-hover:bg-[var(--white-icon-tr)]"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      class="size-7"
-                    >
-                      <path d="M24 12L18.3431 17.6569L16.9289 16.2426L21.1716 12L16.9289 7.75736L18.3431 6.34315L24 12ZM2.82843 12L7.07107 16.2426L5.65685 17.6569L0 12L5.65685 6.34315L7.07107 7.75736L2.82843 12ZM9.78845 21H7.66009L14.2116 3H16.3399L9.78845 21Z" />
-                    </svg>
-                  </span>
-                </div>
-              </div>
-            </a>
+              ))}
+            </div>
           </div>
-        ))
-      }
-    </div>
+        );
+      })
+    }
+
+    <details class="earlier group border-t border-[#ffffff10] pt-8">
+      <summary
+        class="flex items-center gap-3 cursor-pointer text-[var(--white-icon)] hover:text-[var(--white)] transition-colors duration-300 list-none"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="size-5 earlier-chevron transition-transform duration-300"
+          aria-hidden="true"
+        >
+          <path
+            d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"
+          ></path>
+        </svg>
+        <span class="text-sm uppercase tracking-[0.2em]">Earlier projects</span>
+        <span class="text-sm text-[var(--white-icon)]">
+          ({earlier.length}) — academic &amp; coursework
+        </span>
+      </summary>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12 mt-10">
+        {earlier.map((project) => <ProjectCard project={project} />)}
+      </div>
+    </details>
+
     <a
       target="_blank"
       href="https://github.com/julianNordin?tab=repositories"
       aria-label="GitHub"
-      class="w-full flex items-center justify-center gap-2 mt-9 text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-[var(--white-icon-tr)] p-3 rounded-full bg-[#1414149c] hover:bg-[var(--white-icon-tr)] hover:scale-105"
+      class="w-full flex items-center justify-center gap-2 mt-14 text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-[var(--white-icon-tr)] p-3 rounded-full bg-[#1414149c] hover:bg-[var(--white-icon-tr)] hover:scale-105"
     >
       <span class="md:text-lg text-md">More projects on</span>
       <svg
@@ -120,3 +93,18 @@ const projects: Project[] = [
     </a>
   </div>
 </section>
+
+<style>
+  /* Hide the native disclosure triangle so the chevron is the only affordance. */
+  .earlier > summary {
+    list-style: none;
+  }
+
+  .earlier > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .earlier[open] > summary .earlier-chevron {
+    transform: rotate(180deg);
+  }
+</style>
