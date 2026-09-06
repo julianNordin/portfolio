@@ -1,23 +1,36 @@
 ---
 const technologies = [
-  "python",
+  "csharp",
+  "dotnet",
   "openjdk",
-  "cplusplus",
-  "javaScript",
-  "php",
-  "tensorflow",
+  "spring",
+  "typeScript",
+  "react",
+  "angular",
+  "next",
   "nodejs",
-  "mysql",
+  "postgresql",
   "docker",
-  "HTML5",
-  "CSS3",
+  "azure",
+  "rabbitmq",
+  "playwright",
+  "python",
+  "tensorflow",
   "git",
-  "bash",
 ];
 
 const labels: Record<string, string> = {
+  csharp: "C#",
+  dotnet: ".NET",
   openjdk: "Java",
-  cplusplus: "C++",
+  typeScript: "TypeScript",
+  next: "Next.js",
+  nodejs: "Node.js",
+  postgresql: "PostgreSQL",
+  azure: "Azure",
+  rabbitmq: "RabbitMQ",
+  playwright: "Playwright",
+  tensorflow: "TensorFlow",
 };
 ---
 
@@ -34,7 +47,7 @@ const labels: Record<string, string> = {
         >
           <img
             src={`/svg/${tech}.svg`}
-            alt={tech}
+            alt=""
             class="h-7 w-auto object-contain transition-transform group-hover:scale-110 opacity-60"
             width="30"
             height="30"
