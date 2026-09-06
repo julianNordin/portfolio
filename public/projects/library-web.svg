@@ -6,7 +6,20 @@
     </linearGradient>
   </defs>
   <rect width="800" height="450" fill="url(#bg-library-web)"/>
-  <g fill="#ffffff20"><rect x="545" y="105" width="200" height="150" rx="14"/><rect x="545" y="105" width="200" height="26" rx="13"/><rect x="545" y="275" width="140" height="18" rx="9"/><rect x="545" y="305" width="200" height="18" rx="9"/></g>
+
+  <rect x="574" y="122" width="182" height="156" rx="12" fill="#ffffff18"/>
+  <rect x="574" y="122" width="182" height="28" rx="12" fill="#ffffff26"/>
+  <g fill="#ffffff45">
+    <circle cx="590" cy="136" r="4"/>
+    <circle cx="604" cy="136" r="4"/>
+    <circle cx="618" cy="136" r="4"/>
+  </g>
+  <g fill="#ffffff30">
+    <rect x="590" y="166" width="150" height="12" rx="6"/>
+    <rect x="590" y="190" width="120" height="12" rx="6"/>
+    <rect x="590" y="214" width="140" height="12" rx="6"/>
+  </g>
+  <rect x="590" y="240" width="66" height="22" rx="11" fill="#a476ff" opacity="0.8"/>
   <text x="60" y="220" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="700">LibrarySystem Web</text>
   <text x="60" y="270" fill="#e9e9f5" font-family="Arial, sans-serif" font-size="24" font-weight="500">A real API behind the UI</text>
   <text x="60" y="320" fill="#e9e9f5" font-family="Arial, sans-serif" font-size="20">React 19 · TypeScript · TanStack Query</text>

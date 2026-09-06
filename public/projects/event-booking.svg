@@ -6,7 +6,20 @@
     </linearGradient>
   </defs>
   <rect width="800" height="450" fill="url(#bg-event-booking)"/>
-  <g fill="#ffffff20"><rect x="560" y="100" width="180" height="50" rx="12"/><rect x="590" y="170" width="140" height="50" rx="12"/><rect x="560" y="240" width="180" height="50" rx="12"/></g>
+
+  <g fill="#ffffff22">
+    <rect x="580" y="228" width="28" height="32" rx="6"/>
+    <rect x="616" y="228" width="28" height="32" rx="6"/>
+    <rect x="652" y="228" width="28" height="32" rx="6"/>
+    <rect x="724" y="228" width="28" height="32" rx="6"/>
+  </g>
+  <rect x="688" y="228" width="28" height="32" rx="6" fill="none" stroke="#a9ff5b" stroke-width="3"/>
+  <g stroke="#ffffff45" stroke-width="4" stroke-linecap="round" fill="none">
+    <line x1="634" y1="152" x2="692" y2="212"/>
+    <line x1="754" y1="152" x2="712" y2="212"/>
+  </g>
+  <circle cx="628" cy="144" r="11" fill="#ffffff38"/>
+  <circle cx="760" cy="144" r="11" fill="#ffffff38"/>
   <text x="60" y="220" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="700">Event Booking API</text>
   <text x="60" y="270" fill="#e9e9f5" font-family="Arial, sans-serif" font-size="24" font-weight="500">Two people, one last seat</text>
   <text x="60" y="320" fill="#e9e9f5" font-family="Arial, sans-serif" font-size="20">NestJS · Prisma · PostgreSQL</text>

@@ -6,7 +6,16 @@
     </linearGradient>
   </defs>
   <rect width="800" height="450" fill="url(#bg-library-api)"/>
-  <g fill="#ffffff20"><rect x="560" y="100" width="180" height="50" rx="12"/><rect x="590" y="170" width="140" height="50" rx="12"/><rect x="560" y="240" width="180" height="50" rx="12"/></g>
+
+  <g fill="#ffffff22">
+    <rect x="580" y="190" width="26" height="110" rx="4"/>
+    <rect x="612" y="174" width="26" height="126" rx="4"/>
+    <rect x="644" y="200" width="26" height="100" rx="4"/>
+    <rect x="712" y="184" width="26" height="116" rx="4"/>
+  </g>
+  <rect x="676" y="196" width="26" height="104" rx="4" fill="#a476ff" opacity="0.8"
+        transform="rotate(14 689 248)"/>
+  <rect x="568" y="302" width="184" height="8" rx="4" fill="#ffffff30"/>
   <text x="60" y="220" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="700">LibrarySystem API</text>
   <text x="60" y="270" fill="#e9e9f5" font-family="Arial, sans-serif" font-size="24" font-weight="500">Lending rules the server enforces</text>
   <text x="60" y="320" fill="#e9e9f5" font-family="Arial, sans-serif" font-size="20">ASP.NET Core 9 · EF Core · SQL Server</text>
